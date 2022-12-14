@@ -1,0 +1,16 @@
+mvn -B archetype:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=21 -D appTitle="WKND Sites Project" -D appId="wknd" -D groupId="com.adobe.aem.guides" -D artifactId="aem-guides-wknd" -D package="com.adobe.aem.guides.wknd" -D version="0.0.1-SNAPSHOT" -D aemVersion="6.5.0"
+
+
+mvn archetype:generate -B -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=23 -DgroupId=com.tanmay.resume -Dversion=0.0.1-SNAPSHOT -DappsFolderName=tanmay-resume -DartifactId=tanmay-resume -Dpackage=com.tanmay.resume -DartifactName="Tanmay's Resume" -DcomponentGroupName=resume -DconfFolderName=resume -DcontentFolderName=resume -DcssId=resume -DisSingleCountryWebsite=n -Dlanguage_country=en_us -DoptionAemVersion=6.5.0 -DoptionDispatcherConfig=none -DoptionIncludeErrorHandler=n -DoptionIncludeExamples=y -DoptionIncludeFrontendModule=y -DpackageGroup=resume -DsiteName="Tanmay Resume"
+
+
+working -
+
+mvn -B archetype:generate -D archetypeGroupId=com.adobe.granite.archetypes -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=22 -D aemVersion=6.5.0 -D appTitle="Tanmay's Resume" -D appId="tanmay" -D groupId="com.tanmay" -D appsFolderName=resume -D frontendModule=general -D includeExamples=n
+
+
+For React -
+
+mvn -B archetype:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=35 -D aemVersion=6.5.0 -D appTitle="WKND SPA React" -D appId="wknd-spa-react" -D artifactId="aem-guides-wknd-spa.react" -D groupId="com.adobe.aem.guides.wkndspa.react" -D frontendModule=react -D optionIncludeFrontendModule=y -D appsFolderName=wknd-spa-react -D includeExamples=n
+
+mvn -B archetype:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=39 -D appTitle="WKND SPA React" -D appId="wknd-spa-react" -D artifactId="aem-guides-wknd-spa.react" -D groupId="com.adobe.aem.guides.wkndspa.react" -D frontendModule="react" -D aemVersion="6.5.0"

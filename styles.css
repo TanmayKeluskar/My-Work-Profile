@@ -1,0 +1,550 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), url(./fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Odibee Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Odibee Sans Regular"), url(./fonts/Odibee_Sans/OdibeeSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Condensed Regular"), url(./fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+.wrap-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  background: white;
+}
+
+header .topnav {
+  font-family: "Open Sans";
+  overflow: hidden;
+  margin: 5px 40px 5px 0;
+}
+
+header .topnav .logo {
+  margin: 5px 0 0 10px;
+  float: left;
+  height: 50px;
+  width: 30%;
+}
+
+header .topnav .logotxt {
+  height: 25px;
+  width: 150px;
+  font-family: "Roboto Condensed";
+  font-size: 30px;
+  color: goldenrod;
+  text-decoration: none;
+}
+
+header .topnav .logotxt:hover {
+  color: grey;
+}
+
+header .topnav .icon {
+  display: none;
+}
+
+header .navbar {
+  margin: auto;
+}
+
+header .item {
+  float: right;
+  overflow: hidden;
+}
+
+header .item .itembtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: grey;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit;
+  margin: 0;
+}
+
+header .item .itembtn:hover {
+  color: goldenrod;
+}
+
+.top-container {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/banner.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) no-repeat;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-container .intro {
+  padding: 350px 20%;
+  height: 650px;
+  width: 50%;
+}
+
+.top-container .intro #subtext1 {
+  font-size: 50px;
+  margin: 0 auto;
+  color: white;
+  font-family: "Open Sans";
+}
+
+.top-container .intro #subtext2 {
+  font-size: 25px;
+  margin-top: 5px;
+  color: white;
+  font-family: "Dosis";
+}
+
+.top-container .intro #designation {
+  font-weight: 800;
+  background-color: rgba(26, 26, 26, 0.6117647059);
+  color: goldenrod;
+}
+
+.top-container .itext {
+  margin: 0;
+  font-size: 50px;
+  color: white;
+  font-family: "Roboto Condensed";
+}
+
+.top-container #sub {
+  margin-right: 2%;
+  height: 40px;
+  width: 150px;
+  padding: 10px 10px 10px 10px;
+  background-color: goldenrod;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  font-family: "Open Sans";
+}
+
+.top-container #sub:hover {
+  cursor: pointer;
+  background-color: rgb(165, 125, 24);
+  transition-duration: 0.5s;
+}
+
+.objective,
+.whatido,
+.achievements {
+  width: 100%;
+  box-sizing: border-box;
+  height: 400px;
+  font-family: "Dosis";
+}
+
+.objective .column,
+.whatido .column,
+.achievements .column {
+  float: left;
+  width: 25%;
+  height: 300px;
+}
+
+.objective .head,
+.whatido .head,
+.achievements .head {
+  text-align: center;
+}
+
+.objective .heading1,
+.whatido .heading1,
+.achievements .heading1 {
+  font-size: 30px;
+  position: relative;
+}
+
+.objective .heading1:after,
+.whatido .heading1:after,
+.achievements .heading1:after {
+  content: "";
+  position: absolute;
+  border-top: 3px solid black;
+  left: 47.5%;
+  right: 35%;
+  bottom: -7.5px;
+  width: 5%;
+  height: 0px;
+}
+
+.objective .subtext,
+.whatido .subtext,
+.achievements .subtext {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.objective .content,
+.whatido .content,
+.achievements .content {
+  margin: 50px 12px 0 12px;
+}
+
+.objective .headings,
+.whatido .headings,
+.achievements .headings {
+  font-size: 25px;
+}
+
+.objective {
+  height: 100px;
+  margin: 40px 0;
+}
+
+.objective #subtext3 {
+  font-size: 18px;
+}
+
+.achievements {
+  padding: 10px 0 0 0;
+  height: 100px;
+}
+
+.cards {
+  width: 100%;
+  box-sizing: border-box;
+  height: 200px;
+  font-family: "Dosis";
+  text-align: center;
+}
+
+.cards .column {
+  float: left;
+  width: 50%;
+  height: 250px;
+  background-color: #bdbdbd;
+}
+
+.cards .column:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.cards .column img {
+  width: 50px;
+}
+
+.cards .content {
+  margin: 80px 12px;
+}
+
+.cards p {
+  margin-top: 0;
+  font-size: 35px;
+}
+
+.about,
+.contact,
+.work {
+  width: 100%;
+  box-sizing: border-box;
+  height: 600px;
+  font-family: "Dosis";
+}
+
+.about .column,
+.contact .column,
+.work .column {
+  float: left;
+  width: 50%;
+  height: 600px;
+  background-color: #f1f1f1;
+}
+
+.about .column:nth-child(2),
+.contact .column:nth-child(2),
+.work .column:nth-child(2) {
+  background: url(./images/myPic.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.about .content,
+.contact .content,
+.work .content {
+  margin: 100px 60px;
+}
+
+.about .heading1,
+.contact .heading1,
+.work .heading1 {
+  font-size: 30px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.about .subtext,
+.contact .subtext,
+.work .subtext {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.contact .icons {
+  margin-top: 20px;
+}
+
+.contact .icons .icon {
+  padding-right: 10px;
+}
+
+.about ul,
+.contact ul,
+.work ul {
+  list-style-type: none;
+  overflow: hidden;
+  -webkit-padding-start: 0px;
+  padding-inline-start: 0px;
+}
+
+.about ul li,
+.contact ul li,
+.work ul li {
+  padding: 10px 0;
+  color: white;
+  margin: 0 2px;
+  float: left;
+  background-color: #585858;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.about span,
+.contact span,
+.work span {
+  color: goldenrod;
+}
+
+.work ul li {
+  padding: 0;
+  color: black;
+  margin: 0;
+  float: none;
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.work .column:nth-child(1) {
+  background: white;
+}
+
+.work .column:nth-child(2) {
+  background: #f1f1f1;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact .column:nth-child(1) {
+  background: white;
+}
+
+.contact .column:nth-child(2) {
+  background: goldenrod;
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  font-family: "Dosis";
+}
+
+footer .column {
+  height: 100px;
+  background-color: #1a1a1a;
+}
+
+footer .content {
+  padding: 30px 0;
+  color: lightgray;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header .topnav {
+    margin: 5px 10px 5px 0;
+  }
+
+  header .topnav .logo {
+    margin: 5px 0 0 10px;
+  }
+
+  header .topnav a {
+    display: block;
+    color: lightgrey;
+    padding: 5px 0px;
+    text-decoration: none;
+  }
+
+  header .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  header .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  header .topnav.responsive {
+    margin: 5px 10px 5px 0;
+    position: relative;
+    background: white;
+    width: 100%;
+  }
+
+  header .topnav.responsive .navbar {
+    margin-top: 60px;
+  }
+
+  header .topnav.responsive .icon {
+    position: absolute;
+    padding: 4px 16px;
+    right: 0;
+    top: 0;
+  }
+
+  header .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  header .topnav.responsive .item {
+    float: none;
+  }
+
+  header .topnav.responsive .item .itembtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  header .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  header .item .itembtn {
+    display: none;
+  }
+
+  .wrap-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .objective {
+    height: 160px;
+  }
+
+  .whatido {
+    height: 260px;
+  }
+
+  .top-container .intro {
+    padding: 250px 10%;
+    height: 400px;
+    width: 50%;
+  }
+
+  .top-container .intro #subtext1 {
+    font-size: 37px;
+  }
+
+  .top-container .intro #subtext2 {
+    font-size: 22px;
+  }
+
+  .top-container .itext {
+    font-size: 37px;
+  }
+
+  .cards {
+    width: 100%;
+    height: 550px;
+  }
+
+  .cards .column {
+    float: left;
+    width: 100%;
+    height: 250px;
+  }
+
+  .cards .content {
+    margin: 50px 12px;
+  }
+
+  .about,
+  .work,
+  .contact {
+    width: 100%;
+    height: 1350px;
+  }
+
+  .about .column,
+  .work .column,
+  .contact .column {
+    float: left;
+    width: 100%;
+    height: 600px;
+  }
+
+  .about .column:first-child,
+  .work .column:first-child,
+  .contact .column:first-child {
+    height: 750px;
+  }
+
+  .about .content,
+  .work .content,
+  .contact .content {
+    margin: 30px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  footer .column {
+    width: 100%;
+    height: 100px;
+    background-color: #1a1a1a;
+  }
+
+  footer .content {
+    margin: 20px 40px;
+    color: lightgray;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
